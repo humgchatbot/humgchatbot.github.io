@@ -1,2 +1,1 @@
-# humgchatbot.github.io
-Website for Humg Chatbot
+HUMG CHATBOT
