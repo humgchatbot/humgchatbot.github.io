@@ -28,7 +28,7 @@
   
     // Collapse Navbar
     $(window).scroll(function() {
-      $('nav').toggleClass('scrolled', $(this).scrollTop() > 1);
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
     });
   
   })(jQuery); // End of use strict

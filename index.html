@@ -27,6 +27,9 @@
   <!-- Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lemonada:wght@900&display=swap" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -46,7 +49,8 @@
     js = d.createElement(s); js.id = id;
     js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Your Chat Plugin code -->
   <div 
@@ -101,12 +105,48 @@
   </nav>
 
   <header class="masthead" id="home">
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-12 start-btn" data-aos="fade-down">
-          <a href="https://m.me/HumgBotChat" class="btn btn-outline" target="_blank">Bắt đầu thả thính</a>
+        <div class="col-lg-12">
+          <img src="./img/logo.png" alt="chatbot" height="100px" data-aos="fade-down">
+          <h1 class="chatbot text-white mt-2 mb-3" data-aos="fade-down">HUMG CHATBOT</h1>
+          <a 
+            href="https://m.me/HumgBotChat" 
+            class="btn btn-outline py-2" 
+            data-aos="zoom-in"
+            target="_blank"
+          >
+            Bắt đầu thả thính 
+            <i class="icon-arrow-right-circle"></i>
+          </a>
+          <h1 class="connect mt-3 text-white" data-aos="fade-up">Connect With One Click</h1>
         </div>
       </div>
+      <class class="wave">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 1440 320"
+        >
+          <path 
+            fill="#ffffff" 
+            fill-opacity="1" 
+            d="M0,192L60,213.3C120,235,240,277,360,256C480,235,600,149,720,106.7C840,64,960,64,1080,96C1200,128,1320,192,1380,224L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          >
+          </path>
+        </svg>
+      </class>
     </div>
   </header>
 
@@ -135,15 +175,15 @@
         </div>
         <div class="col-lg-8 my-auto">
           <div class="container-fluid">
-            <div class="row" data-aos="fade-down">
-              <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6" data-aos="fade-down">
                 <div class="feature-item">
                   <i class="icon-screen-smartphone text-primary"></i>
                   <h3>Phù hợp</h3>
                   <p class="text-muted">Chatbot của chúng tớ phù hợp với mọi loại thiết bị!</p>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6" data-aos="fade-down">
                 <div class="feature-item">
                   <i class="icon-user text-primary"></i>
                   <h3>Dễ dàng</h3>
@@ -151,15 +191,15 @@
                 </div>
               </div>
             </div>
-            <div class="row" data-aos="fade-up">
-              <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6" data-aos="fade-up">
                 <div class="feature-item">
                   <i class="icon-present text-primary"></i>
                   <h3>Event</h3>
                   <p class="text-muted">Chúng tớ thường xuyên tổ chức các event, để mọi người kết nối, gần gũi hơn!</p>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6" data-aos="fade-up">
                 <div class="feature-item">
                   <i class="icon-lock-open text-primary"></i>
                   <h3>Bảo mật</h3>
@@ -177,7 +217,7 @@
     <div class="cta-content">
       <div class="container" data-aos="fade-right">
         <h3>Còn chờ gì nữa ?<br>Bắt đầu <span class="text-danger">thả thính</span> ngay <i class="fas fa-heart"></i></h3>
-        <a href="https://m.me/HumgBotChat" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Bắt đầu</a>
+        <a href="https://m.me/HumgBotChat" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Bắt đầu <i class="icon-arrow-right-circle"></i></a>
       </div>
     </div>
     <div class="overlay"></div>
@@ -189,13 +229,13 @@
         Kết nối với những người bạn mới
         <i class="fas fa-heart"></i>
       </h2>
-      <ul class="list-inline list-social" data-aos="fade-down">
-        <li class="list-inline-item social-twitter">
+      <ul class="list-inline list-social" >
+        <!-- <li class="list-inline-item social-messenger" data-aos="fade-right">
           <a href="https://m.me/HumgBotChat" target="_blank">
             <i class="fab fa-facebook-messenger"></i>
           </a>
-        </li>
-        <li class="list-inline-item social-facebook">
+        </li> -->
+        <li class="list-inline-item social-facebook" data-aos="zoom-in">
           <a href="https://www.facebook.com/HumgBotChat" target="_blank">
             <i class="fab fa-facebook-f"></i>
           </a>
@@ -206,7 +246,7 @@
       <div class="row mt-5 contact text-left">
         <div class="col-md-4 text-left">
           <img src="./img/logo.png" alt="logo" height="60px">
-          <p class="mt-3">Với <a href="https://www.facebook.com/HumgBotChat" target="_blank" class="text-info">HUMG Chatbot</a>  của chúng tớ, các cậu có thể giao lưu, trò chuyện, đặc biệt là kiếm gấu nhaa !</p>
+          <p class="mt-3">Với <a href="https://www.facebook.com/HumgBotChat" target="_blank" class="text-info">HUMG Chatbot</a>, các cậu có thể giao lưu, trò chuyện, đặc biệt là kiếm gấu nhaa !</p>
         </div>
         <div class="col-md-4 text-left">
           <h3>Liên hệ với chúng tớ</h3>
@@ -218,7 +258,7 @@
               Email: <span class="text-info">humgchatbot@gmail.com</span>
             </li>
             <li>
-              Group: <a class="text-info" href="https://www.facebook.com/groups/humgbotchat/" target="_blank">Group của chúng tớ</a>
+              Group: <a class="text-info" href="https://www.facebook.com/groups/humgbotchat/" target="_blank">HUMG Chatbot - Group</a>
             </li>
           </ul>  
         </div>
@@ -248,6 +288,14 @@
     </div>
   </footer>
 
+  <button class="to-top">
+   <i class="fa fa-angle-double-up"></i>
+  </button>
+
+  <a href="tel:0984360229" class="phone" title="Hotline: 0984260229">
+    <i class="fas fa-phone fa-lg text-white"></i>
+  </a>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -268,6 +316,23 @@
     setTimeout(() => {
       $('.loader_bg').fadeToggle();
     }, 1500);
+
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if($(window).scrollTop() > 300) {
+          $('.to-top').css({
+            "opacity": "1" , "pointer-events": "auto"
+          });
+        } else {
+          $('.to-top').css({
+            "opacity": "0" , "pointer-events": "none"
+          });
+        }
+      });
+      $('.to-top').click(function() {
+        $('html').animate({scrollTop: 0}, 1000);
+      });
+    });
   </script>
 
 </body>
