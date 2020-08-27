@@ -682,8 +682,7 @@ body.loading .loading-modal {
     margin: 0;
     text-align: center;
     font-size: 14px;
-    width: 90%;
-    height: 90%
+    width: 100%
 }
 
 .input {
