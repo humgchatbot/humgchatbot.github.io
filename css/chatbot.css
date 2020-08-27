@@ -612,10 +612,10 @@ footer ul li a.active {
 }
 
 .contact-form .btnContact {
-    width: 40%;
+    width: 43%;
     border: none;
     border-radius: 1rem;
-    padding: 1%;
+    padding: 2%;
     background: #b17f02;
     font-weight: 600;
     color: #fff;
@@ -630,7 +630,7 @@ footer ul li a.active {
 .btnContactSubmit {
     width: 50%;
     border-radius: 1rem;
-    padding: 1.5%;
+    padding: 2.5%;
     color: #fff;
     background-color: #0062cc;
     border: none;
