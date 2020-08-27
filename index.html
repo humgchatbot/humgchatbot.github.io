@@ -193,33 +193,26 @@
         </div>
         <div class="overlay"></div>
     </section>
-    
-    <div class="container contact-form" >
+
+    <div class="container contact-form">
         <div class="contact-image">
-            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" id="confession"/>
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" id="confession" />
         </div>
         <div>
             <h3>Gửi Confession</h3>
-           <form class="row" method="post" autocomplete="off" name="google-sheet">
+            <form class="row" method="post" autocomplete="off" name="google-sheet">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <textarea 
-                            name="Điều bạn muốn thổ lộ ❤🤞" 
-                            class="form-control" 
-                            placeholder="Nội dung (bắt buộc)" 
-                            style="resize: none;width: 100%; height: 150px;"
-                            value=""
-                            required=""
-                        ></textarea>
+                        <textarea name="Điều bạn muốn thổ lộ ❤🤞" class="form-control" placeholder="Nội dung (bắt buộc)" style="resize: none;width: 100%; height: 150px;" value="" required=""></textarea>
                     </div>
                     <div class="form-group">
-                        <label class="file form-control">
-                            <h6 class="text-muted">Thêm ảnh</h6>
-                            <input type="file" name="Upload Ảnh hoặc Video" class="form-control" value=""  hidden />
-                        </label>
+                        <div class="dropzone">
+                            <div class="info"></div>
+                            <input type="text" id="link" name="Upload Ảnh hoặc Video" class="form-control" placeholder="File đã tải lên" value="" />
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Link đính kèm" class="form-control" placeholder="Đính kèm" value="" />
+                        <input type="text" name="Link đính kèm" class="form-control" placeholder="Link Đính kèm" value="" />
                     </div>
                     <div class="form-group">
                         <input type="text" name="Để lại danh tính (Nếu muốn)." class="form-control" placeholder="Danh tính (nếu muốn)" value="" />
@@ -232,12 +225,15 @@
                             <input type="text" name="Mật mã" class="form-control" placeholder="Mật mã" value="" />
                         </div>
                     </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btnContact" value="Gửi" />
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img class="img-fluid img" src="./img/confession_bg.jpg" alt="confession">
-                </div>
-                <div class="col-md-12 form-group">
-                    <input type="submit" name="submit" class="btnContact" value="Gửi" />
+                    <div class="contact-img">
+                        <img class="img-fluid img" src="./img/confession_bg.jpg" alt="confession">
+                    </div>
                 </div>
             </form>
         </div>
@@ -269,13 +265,13 @@
                     <h3>Liên hệ với chúng tớ</h3>
                     <ul class="mt-3 p-0">
                         <li>
-                            Admin: 
+                            Admin:
                             <a class="text-info" href="https://www.facebook.com/adschatbot/" target="_blank">
                                 Liên hệ đội ngũ Admin
                             </a>
                         </li>
                         <li>
-                            Email: 
+                            Email:
                             <span class="text-info">humgchatbot@gmail.com</span>
                         </li>
                         <li>
@@ -289,16 +285,8 @@
                 <div class="col-md-4">
                     <h3>Fanpage</h3>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe 
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHumgBotChat%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=348013205655413" 
-                            width="340"
-                            height="214" 
-                            style="border:none;overflow:hidden" 
-                            scrolling="no" 
-                            frameborder="0" 
-                            allowTransparency="true" 
-                            allow="encrypted-media"
-                        >
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHumgBotChat%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=348013205655413" width="340"
+                            height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
                         </iframe>
                     </div>
                 </div>
@@ -365,14 +353,22 @@
 
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxv9d5fHLc-9wD18U3oD0WzXBGB0xhBG332pLbzxr3R-FyWKMPY/exec';
         const form = document.forms['google-sheet'];
-        
+
         form.addEventListener('submit', e => {
             e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Cảm ơn bạn đã gửi confession..! Confession của bạn đã được chúng mình ghi nhận..!"))
-            .catch(error => console.error('Error!', error.message))
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Cảm ơn bạn đã gửi confession..! Confession của bạn đã được chúng mình ghi nhận..!"))
+                .catch(error => console.error('Error!', error.message))
         });
     </script>
+
+    <script src="js/imgur.js"></script>
+    <script src="js/upload.js"></script>
+
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="b677d2f6ea4dcf6cd3049d97-|49" defer=""></script>
 
 </body>
 
