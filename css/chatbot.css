@@ -652,7 +652,7 @@ footer ul li a.active {
 }
 
 .contact-img img {
-    width: 100%;
+    width: 90%;
 }
 
 body.loading .loading-modal {
@@ -703,7 +703,7 @@ body.loading .loading-modal {
 }
 
 .image-url {
-    width: 100%
+    width: 90%
 }
 
 .dropzone.dropzone-dragging {
@@ -729,7 +729,7 @@ body.loading .loading-modal {
 }
 
 .img {
-    width: 100%
+    width: 90%
 }
 
 @media screen and (min-width:300px) and (max-width:700px) {
