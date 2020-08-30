@@ -1,0 +1,124 @@
+@media screen and (min-width:300px) and (max-width:700px) {
+    .dropzone {
+        max-width: 100%
+    }
+    .info {
+        margin-top: 3%
+    }
+    .status {
+        width: 80%
+    }
+    .image-url {
+        width: 80%
+    }
+    .loading-table {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
+        margin-bottom: 50%
+    }
+  }
+
+  @media (min-width: 992px) {
+    #mainNav {
+      border-color: transparent;
+      background-color: transparent;
+    }
+   
+    #mainNav.navbar-shrink .navbar-brand {
+      color: #222222;
+    }
+    #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+      color: #fdcc52;
+    }
+    #mainNav.navbar-shrink .navbar-nav > li > a,
+    #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+      color: #222222;
+    }
+    #mainNav.navbar-shrink .navbar-nav > li > a:hover,
+    #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+      color: #fdcc52;
+    }
+  }
+
+  @media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 775px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    header.masthead .header-content {
+      margin-bottom: 0;
+      text-align: left;
+    }
+    header.masthead .header-content h1 {
+      font-size: 50px;
+    }
+    header.masthead .device-container {
+      max-width: 325px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    section.download .badges .badge-link {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    section.features .device-container {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .to-top {
+      font-size: 22px;
+      width: 45px;
+      height: 45px;
+    }
+  
+  }
+  
+  @media (min-width: 768px) {
+    section.cta .cta-content h2 {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hidden {
+      display: none;
+    }
+  
+    .to-top {
+      font-size: 18px;
+      width: 45px;
+      height: 45px;
+    }
+  
+    .img {
+      display: none;
+    }
+  
+  }
+
+  @media(min-width:768px) and (max-width:1024px) { 
+    .section {
+		padding: 80px 0
+	}
+    .feature-info {
+		width: 60%
+	}
+  }
+
+  @media only screen and (min-width:992px) and (max-width:1280px) { 
+    .feature-info {
+		width: 80%
+	}
+	.feature-info {
+		width: 68%
+	}
+  }
