@@ -675,7 +675,7 @@ body.loading .loading-modal {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-        padding: .5rem 0
+    padding: 0 .2rem
 }
 
 .info {
