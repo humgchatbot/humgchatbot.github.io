@@ -677,6 +677,10 @@ body.loading .loading-modal {
     margin-left: auto
 }
 
+.dropzone .form-control {
+    border-radius: 2rem;
+}
+
 .info {
     padding: .5rem 0
 }
