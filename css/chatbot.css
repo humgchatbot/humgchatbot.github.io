@@ -43,6 +43,11 @@ h6 {
     letter-spacing: 1px;
 }
 
+h7 {
+    font-weight: 180;
+    letter-spacing: 1px;
+}
+
 p {
     font-size: 18px;
     line-height: 1.5;
