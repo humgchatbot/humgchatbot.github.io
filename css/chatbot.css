@@ -44,8 +44,9 @@ h6 {
 }
 
 h7 {
-    font-weight: 180;
-    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 p {
