@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="HUMG Chatbot">
+    <meta name="author" content="HUMG Chatbot">
 
     <title>HUMG Chatbot</title>
 
@@ -31,6 +31,7 @@
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lemonada:wght@900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body id="page-top">
@@ -67,7 +68,7 @@
     <nav class="navbar navbar-expand-lg navbar-default fixed-top" id="mainNav">
         <div class="container-fluid">
             <a class="navbar-brand js-scroll-trigger" href="https://humgchatbot.netlify.app/">
-                <img src="./img/icon.png" alt="chatbot" height="70px">
+                <img src="./img/logo-4.png" alt="chatbot" height="40px">
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -84,6 +85,12 @@
                         <a class="nav-link js-scroll-trigger" href="#confession">Gửi confession</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#tester">Phản hồi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Đội ngũ</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#connect">
                             Cộng đồng HUMGer
                         </a>
@@ -94,13 +101,10 @@
     </nav>
 
     <header class="masthead" id="home">
-        <div class="alo">
-            <div id="particles-js"></div>
-        </div>
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-12">
-                    <img src="./img/logo.png" alt="chatbot" height="100px" data-aos="fade-down">
+                    <img class="" src="./img/logo.png" alt="chatbot" height="100px" data-aos="fade-down">
                     <h1 class="chatbot text-white mt-2 mb-3" data-aos="fade-down">HUMG CHATBOT</h1>
                     <a href="https://m.me/HumgBotChat" class="btn btn-outline py-2" data-aos="zoom-in" target="_blank">
                         Bắt đầu thả thính
@@ -187,7 +191,7 @@
         <div class="cta-content">
             <div class="container" data-aos="fade-right">
                 <h3>Còn chờ gì nữa ?<br>Bắt đầu <span class="text-danger">thả thính</span> ngay <i class="fas fa-heart"></i></h3>
-                <a href="https://m.me/HumgBotChat" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">
+                <a href="https://m.me/HumgBotChat" target="_blank" class="btn btn-outline btn-xl">
 					Bắt đầu <i class="icon-arrow-right-circle"></i>
 				</a>
             </div>
@@ -205,7 +209,7 @@
                 <span class="send-text">Đây là một nơi tuyệt vời để bạn có thể chia sẻ câu chuyện của mình.</span><br>
                 <span class="send-text">Đừng quên kéo xuống dưới để xem <a href="#helper" class="js-scroll-trigger">hướng dẫn</a> nhé.</span>
             </div>
-            <form class="row" method="post" autocomplete="off" name="google-sheet">
+            <form class="row mb-3" method="post" autocomplete="off" name="google-sheet">
                 <div class="col-md-6">
                     <div class="form-group">
                         <textarea name="Điều bạn muốn thổ lộ ❤🤞" class="form-control" placeholder="Nội dung (bắt buộc)" style="resize: none;width: 100%; height: 150px;" value="" required=""></textarea>
@@ -213,7 +217,7 @@
                     <div class="form-group">
                         <div class="dropzone">
                             <div class="info"></div>
-                            <input type="text" id="link" name="Upload Ảnh hoặc Video" class="form-control" placeholder="File đã tải lên" style="resize: none;width: 100%; height: 25px; font-size: 14px;" value="" />
+                            <input type="text" id="link" name="Upload Ảnh hoặc Video" class="form-control" value="" />
                         </div>
                     </div>
                     <div class="form-group">
@@ -237,7 +241,7 @@
                 </div>
                 <div class="col-md-6 text-center">
                     <div class="contact-img">
-                        <img class="img-fluid img" src="./img/confession_bg.jpg" alt="confession">
+                        <img class="img-fluid img" src="./img/confession_bg.svg" alt="confession">
                     </div>
                 </div>
             </form>
@@ -259,73 +263,73 @@
                 </div>
             </div>
             <div class="row featured-bg">
-                <div class="col-lg-6 col-md-12 p-0">
+                <div class="col-lg-6 col-md-12 p-0" data-aos="fade-down">
                     <div class="feature-item featured-border1">
                         <div class="feature-icon float-left">
                             <i class="icon-heart" aria-hidden="true"></i>
                         </div>
-                        <div class="feature-info">
+                        <div class="feature-info float-left">
                             <h4>Nội dung</h4>
                             <p>Bạn có thể bỏ trống tất cả, trừ trường này vì đây là nơi bạn sẽ viết câu chuyện của mình. Nhưng sẽ có vài bạn cần lưu ý:
-                                <a href="#">chính sách Chatbot Confession.</a>
+                                <a href="#">chính sách Chatbot Confession</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 p-0">
+                <div class="col-lg-6 col-md-12 p-0" data-aos="fade-down">
                     <div class="feature-item featured-border2">
                         <div class="feature-icon float-left">
                             <i class="icon-cloud-upload" aria-hidden="true"></i>
                         </div>
-                        <div class="feature-info">
+                        <div class="feature-info float-left">
                             <h4>Tải lên</h4>
                             <p>Thêm một hình ảnh có thể giúp confession của<br> bạn sống động hơn. Hình ảnh sẽ được lưu trữ ở<br> đâu đó trên internet và tự dẫn liên kết về đây.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 p-0">
+                <div class="col-lg-6 col-md-12 p-0" data-aos="fade-in">
                     <div class="feature-item featured-border1">
                         <div class="feature-icon float-left">
                             <i class="icon-link" aria-hidden="true"></i>
                         </div>
-                        <div class="feature-info">
+                        <div class="feature-info float-left">
                             <h4>Đính kèm</h4>
                             <p>Không chỉ ảnh, bạn có thể điền vào liên kết của<br> một video, bài hát hay bất kì thứ gì có URL, miễn là nó không vi phạm chính sách của chúng mình.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 p-0">
+                <div class="col-lg-6 col-md-12 p-0" data-aos="fade-in">
                     <div class="feature-item featured-border2">
                         <div class="feature-icon float-left">
                             <i class="icon-note" aria-hidden="true"></i>
                         </div>
-                        <div class="feature-info">
+                        <div class="feature-info float-left">
                             <h4>Ghi chú</h4>
                             <p>Bạn muốn confession được ưu tiên duyệt trước<br> hay đăng vào lúc 8h tối? Đây là nơi để bạn viết<br> điều đó, không phải trong nội dung confession.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 p-0">
+                <div class="col-lg-6 col-md-12 p-0" data-aos="fade-up">
                     <div class="feature-item featured-border3">
                         <div class="feature-icon float-left">
                             <i class="icon-key" aria-hidden="true"></i>
                         </div>
-                        <div class="feature-info">
+                        <div class="feature-info float-left">
                             <h4>Mật mã</h4>
                             <p>Nếu muốn sửa, xoá hay kiểm tra trạng thái của<br> confession, bạn sẽ cần cung cấp nội dung và mật mã để chứng minh rằng bạn chính là tác giả.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 p-0">
+                <div class="col-lg-6 col-md-12 p-0" data-aos="fade-up">
                     <div class="feature-item">
                         <div class="feature-icon float-left">
                             <i class="icon-rocket" aria-hidden="true"></i>
                         </div>
-                        <div class="feature-info">
+                        <div class="feature-info float-left">
                             <h4>Gửi!</h4>
                             <p>Khi bạn đã sẵn sàng, hãy gửi confession và hóng kết quả trên Facebook. Confession hợp lệ sẽ được đăng trong tối đa 3 ngày kể từ ngày gửi.<br><br>
                             </p>
@@ -336,7 +340,167 @@
         </div>
     </section>
 
-
+    <div id="tester" class="container">
+        <div class="experiment-child">
+            <div class="row p-5">
+                <div class="col-md-6" data-aos="fade-down">
+                    <img src="./img/drawkit.gif" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-left" data-aos="fade-up">
+                    <span class="section-title" style="font-size: 40px;">Phiên bản thử nghiệm</span>
+                    <div class="desc-text mt-5">
+                        <p>Chúng mình luôn cố gắng để mang lại trả nghiệm tốt nhất cho mọi người. Tuy nhiên, do developer chưa vững tay nên HUMG Chatbot còn khá nhiều lỗi nhỏ. Hãy cho chúng mình biết ý kiến của bạn nhé!</p>
+                    </div>
+                    <a href="https://m.me/adschatbot/" target="_blank" class="btn btn-ex btn-xl">
+                        Phản hồi <i class="icon-arrow-right-circle"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row p-3 mt-5">
+                <div class="col-md-4">
+                    <div class="border-item text-center">
+                        <div class="border-icon mb-4">
+                            <i class="icon-calendar"></i>
+                        </div>
+                        <div class="border-info">
+                            <h4>
+                                <span>1+</span> năm hoạt động
+                            </h4>
+                            <p>Fanpage của HUMG Chatbot được tạo ra vào đầu năm 2019. Sau hơn 1 năm rưỡi hoạt động, chúng mình đã ghép cặp cho rất nhiều HUMGer rồi đấy !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="border-item text-center">
+                        <div class="border-icon mb-4">
+                            <i class="icon-like"></i>
+                        </div>
+                        <div class="border-info">
+                            <h4>
+                                <span>1k+</span> like & follow
+                            </h4>
+                            <p>Không chỉ riêng các HUMGer, mà còn có cả các AOFer, TMUer, HAUIer,..v.v... đã đến chatbot để thả thính bắt cá và tìm hiểu thêm về HUMG của chúng ta đấy !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="border-item text-center">
+                        <div class="border-icon mb-4">
+                            <i class="icon-heart"></i>
+                        </div>
+                        <div class="border-info">
+                            <h4>
+                                <span>500+</span> thính đã được thả
+                            </h4>
+                            <p>
+                                Những mẩu thính ngọt ngào, những lời nói dịu êm đã được gửi đi bởi HUMG Chatbot. Ngoài ra, chúng mình còn có Confession để cho các bạn thổ lộ đó !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="team"></div>
+            <div class="text-center team">
+                <h2 class="section-title">Đội ngũ</h2>
+                <div class="desc-text">
+                    <p>HUMG Chatbot hoạt động độc lập với trường Đại học Mỏ Địa chất<br> và được điều hành bởi một đội ngũ admin ẩn danh vì "cá" quên thân, vì dân phục vụ.</p>
+                </div>
+            </div>
+            <div class="row team">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div style="cursor: pointer;">
+                        <div class="single-team">
+                            <div class="team-thumb">
+                                <img src="./img/teame1.png" class="img-fluid" alt="member-1">
+                            </div>
+                            <div class="team-details">
+                                <div class="team-social-icons">
+                                    <ul class="social-list">
+                                        <li>
+                                            <a href="https://www.facebook.com/HumgBotChat" target="_blank"><i
+                                                    class="icon-social-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-inner text-center">
+                                    <h5 class="team-title">#kid</h5>
+                                    <p>Team Leader and Founder Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div style="cursor: pointer;">
+                        <div class="single-team">
+                            <div class="team-thumb">
+                                <img src="./img/teame2.png" class="img-fluid" alt="member-1">
+                            </div>
+                            <div class="team-details">
+                                <div class="team-social-icons">
+                                    <ul class="social-list">
+                                        <li>
+                                            <a href="https://www.facebook.com/HumgBotChat" target="_blank"><i
+                                                    class="icon-social-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-inner text-center">
+                                    <h5 class="team-title">#bog</h5>
+                                    <p>Front-end Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div style="cursor: pointer;">
+                        <div class="single-team">
+                            <div class="team-thumb">
+                                <img src="./img/teame3.png" class="img-fluid" alt="member-1">
+                            </div>
+                            <div class="team-details">
+                                <div class="team-social-icons">
+                                    <ul class="social-list">
+                                        <li>
+                                            <a href="https://www.facebook.com/HumgBotChat" target="_blank"><i
+                                                    class="icon-social-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-inner text-center">
+                                    <h5 class="team-title">#alex & #be</h5>
+                                    <p>Event Team</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div style="cursor: pointer;">
+                        <div class="single-team">
+                            <div class="team-thumb">
+                                <img src="./img/teame4.png" class="img-fluid" alt="member-1">
+                            </div>
+                            <div class="team-details">
+                                <div class="team-social-icons">
+                                    <ul class="social-list">
+                                        <li>
+                                            <a href="https://www.facebook.com/HumgBotChat" target="_blank"><i
+                                                    class="icon-social-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-inner text-center">
+                                    <h5 class="team-title">#cún & #nấm</h5>
+                                    <p>Censor Team</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experiment"></div>
     <section class="contact bg-primary" id="connect">
         <div class="container">
             <h2>
@@ -354,7 +518,7 @@
         <div class="container">
             <div class="row mt-5 contact text-left">
                 <div class="col-md-4 text-left">
-                    <img src="./img/logo.png" alt="logo" height="60px">
+                    <img src="./img/logo-5.png" alt="logo" height="50px">
                     <p class="mt-3">
                         Với <a href="https://www.facebook.com/HumgBotChat" target="_blank" class="text-info">HUMG Chatbot</a>, các cậu có thể giao lưu, trò chuyện, đặc biệt là kiếm gấu nhaa !
                     </p>
@@ -364,12 +528,12 @@
                     <ul class="mt-3 p-0">
                         <li>
                             Admin:
-                            <a class="text-info" href="https://www.facebook.com/adschatbot/" target="_blank">
+                            <a class="text-info" href="https://m.me/adschatbot/" target="_blank">
                                 Liên hệ đội ngũ Admin
                             </a>
                         </li>
                         <li>
-                            Email:
+                            Email :
                             <span class="text-info">humgchatbot@gmail.com</span>
                         </li>
                         <li>
@@ -415,9 +579,6 @@
 
     <!-- Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src="./js/particles.js"></script>
-    <script src="./js/app.js"></script>
 
     <script>
         AOS.init({
